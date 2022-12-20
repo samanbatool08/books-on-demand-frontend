@@ -3,6 +3,7 @@ import Book from './Book';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import './AllBooks.css'
 
 const AllBooks = () => {
 
@@ -16,13 +17,16 @@ useEffect(() => {
 
 
 
+
   return (
-    <div>
-      <Row gutter={40}>
+    <div className="grid">
       {books.map(book => {
-         <Book book={book}/>
+        return (
+        <div className="item">
+          <Book book={book}/>
+        </div>
+        )
       })}
-      </Row>
     </div>
   )
 }

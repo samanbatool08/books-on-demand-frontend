@@ -3,7 +3,9 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 const Book = ({ book }) => {
+
   return (
+
     <Card style={{ width: '18rem' }}>
       <Card.Body>
         <Card.Title>{book.title}</Card.Title>
@@ -16,6 +18,7 @@ const Book = ({ book }) => {
         <Button variant="primary">Favorite this book</Button>
       </Card.Body>
     </Card>
+
   )
 }
 
